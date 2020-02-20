@@ -1,0 +1,659 @@
+/*
+==================
+Global Style
+==================
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body{
+	background: #fff;
+	font-family: 'Kulim Park', sans-serif;
+	font-size: 16px;
+}
+/*
+===================
+Universal Style
+===================
+*/
+:root{
+	--text-red: red;
+	--text-black: #222;
+	--bg-black: #222;
+	--bg-white: #fff;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.text-red{
+	color: red;
+}
+.text-black{
+	color: #222;
+}
+.text-white{
+	color: #fff;
+}
+.bg-black{
+	background: black;
+}
+.border-radius{
+	border-radius: 4px;
+}
+.font-weight{
+	font-weight: bold;
+}
+.font-weight{
+	font-weight: 600;
+}
+.font-weight-550{
+	font-weight: 550;
+}
+.container{
+	max-width: 1076px;
+	margin: auto;
+}
+.secondary-container{
+	max-width: 1264px;
+	margin: auto;
+}
+/*
+==================
+Header
+==================
+*/
+header{
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+}
+.Main-header{
+	margin: auto;
+	max-width: 700px;
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-content: space-between;
+}
+.Main-header > :nth-child(1){
+	display: flex;
+	justify-content: center;
+	height: 30px;
+}
+.Main-header > :nth-child(1) img{
+	width: 40%;
+}
+.Main-header nav{
+	display: flex;
+	align-items: center;
+}
+.Main-header nav ul{
+	display: flex;
+	align-items: center;
+}
+.Main-header nav li{
+	margin: 0px 0.9rem;
+	padding: 0.2em 1em;
+}
+.Main-header nav ul a{
+	font-size: 0.9rem;
+}
+.Main-header nav ul > :nth-child(5){
+	border: 2px solid black;
+	display: flex;
+	align-items: center;
+}
+.Main-header nav ul > :nth-child(5) a{
+	padding-right: 0.4em;
+}
+/*
+==================
+Ui - Section
+==================
+*/
+#Main-Ui{
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+#Main-Ui > :nth-child(1){
+	width: 100%;
+	min-height: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+#Main-Ui > :nth-child(1) > :nth-child(1){
+	width: 34%;
+	display: flex;
+	align-items: center;
+}
+#Main-Ui > :nth-child(1) > :nth-child(1) .contant{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 5.6em;
+}
+#Main-Ui > :nth-child(1) > :nth-child(1) .contant > :nth-child(1){
+	padding: 
+}
+#Main-Ui > :nth-child(1) > :nth-child(1) .contant > :nth-child(1) p{
+	font-size: 2.4rem;
+	padding-bottom: 1.8em;
+}
+#Main-Ui > :nth-child(1) > :nth-child(1) .contant > :nth-child(2) a{
+	display: inline-block;
+	padding: 1em 3em;
+}
+#Main-Ui > :nth-child(1) > :nth-child(2){
+	width: 64%;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+#Main-Ui > :nth-child(1) > :nth-child(2) img{
+	position: absolute;
+	right: -150px;
+	width: 90%;
+}
+/*
+==================
+Content-Section
+==================
+*/
+#Content-Section{
+	min-height: 250px;
+	display: flex;
+	align-items: center;
+}
+#Content-Section .container .contant{
+	min-height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#Content-Section .container .contant > :nth-child(1) h1{
+	font-size: 3.5rem;
+}
+#Content-Section .container .contant > :nth-child(2) p{
+	font-size: 1rem;
+}
+
+/*
+==================
+Main-Third
+==================
+*/
+#Main-Third{
+	min-height: 1800px;
+	display: flex;
+	align-items: center;
+}
+#Main-Third #Main-Div{
+	min-height: 1500px;
+	display: flex;
+	align-items: center;
+}
+#Main-Div #Colunms{
+	min-height: 1500px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#Main-Div #Colunms .Main-Column{
+	width: 100%;
+	min-height: 450px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#Main-Div #Colunms .Main-Column .main-img{
+	width: 50%;
+}
+#Main-Div #Colunms .Main-Column .main-img img{
+	width: 90%;
+}
+#Main-Div #Colunms .Main-Column .main-contant{
+	width: 40%;
+	display: flex;
+	align-items: center;
+}
+#Main-Div #Colunms .Main-Column .main-contant .contant{
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+#Main-Div #Colunms .Main-Column .main-contant .contant h2{
+	font-size: 1.7rem;
+}
+#Main-Div #Colunms .Main-Column .main-contant .contant p{
+	font-size: 1.05rem;
+}
+#Main-Div #Colunms .Main-Column .main-contant .contant a{
+	border: 0.1rem solid var(--text-black);
+	padding: 0.6em 1.5em;
+}
+/*
+==================
+Describe
+==================
+*/
+#Main-decscribe{
+	min-height: 600px;
+}
+#Main-decscribe #main-contant{
+	min-height: 500px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+#Main-decscribe #main-contant .contant{
+	width: 50%;
+	min-height: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	z-index: 1;
+}
+#Main-decscribe #main-contant .contant h1{
+	font-size: 3.2rem;
+	padding: 0px 1em;
+	padding-bottom: 1em;
+}
+#Main-decscribe #main-contant .contant p{
+	padding: 0px 2.5em;
+}
+#Main-decscribe #main-contant .img-left{
+	width: 40%;
+	position: absolute;
+	bottom: 0;
+	left: -70px;
+
+}
+#Main-decscribe #main-contant .img-right{
+	width: 13%;
+	position: absolute;
+	top: 0;
+	right: -10px;
+	
+}
+/*
+==================
+First Slyder
+==================
+*/
+#First-slider{
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+}
+#main-slider-first{
+	min-height: 550px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#main-slider-first #card{
+	height: 396px;
+	width: 30%;
+	transition: 0.9s linear;
+}
+#main-slider-first #card:hover #gradient{
+	background-color: rgba(77, 140, 183,0.7);
+}
+#main-slider-first #card:hover #gradient .contant{
+	transition: 1s linear; 
+	z-index: 1;
+}
+
+#main-slider-first .card1{
+	background: url('./images/wall.2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#main-slider-first .card2{
+ 	background: url('./images/wall.2.jpg');
+ 	background-repeat: no-repeat;
+	background-size: cover;
+}
+#main-slider-first .card3{
+	background: url('./images/wall.2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#main-slider-first #card #gradient{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.9s linear;
+}
+
+#main-slider-first #card #gradient .contant{
+	min-height: 230px;
+	width: 80%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: -1;
+}
+#main-slider-first #card #gradient .contant h3{
+	display: inline-block;
+	border-bottom: 1px solid var(--bg-white);
+}
+#main-slider-first #card #gradient .contant span{
+	padding: 0.3em 2em;
+	background: #fff;
+}
+#main-slider-first #card #gradient .contant > :nth-child(1){
+	min-height: 100px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*
+==================
+Third Contant
+==================
+*/
+#Main-contant3S{
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+}
+#Main-contant3{
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#Main-contant3 > :nth-child(1){
+	padding: 0px 8em;
+	text-align: center;
+}
+#Main-contant3 > :nth-child(1) h1{
+	padding: 1em 0px;
+	font-size: 3.2rem;
+}
+#Main-contant3 > :nth-child(1) p{
+	font-size: 1.05rem;
+}
+/*
+==================
+Features Section
+==================
+*/
+#features{
+	min-height: 1600px;
+	display: flex;
+	align-items: center;
+}
+#Main-features{
+	min-height: 1300px;
+	padding: 0px 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#Main-features #card{
+	min-height: 380px;
+	display: flex;
+	justify-content: space-between;
+}
+#Main-features #card .cards{
+	width: 40%;
+	padding: 4em 2.5em 3em 2.5em;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s linear;
+	box-shadow: 0px 0px 2px 0.2px rgba(0, 0, 0, .1);
+	
+
+}
+#Main-features #card .cards img{
+	width: 40px;
+}
+#Main-features #card .cards > :nth-child(2){
+	display: none;
+}
+#Main-features #card .cards:hover{
+	box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, .4),
+				0px -4px 4px rgba(0, 0, 0, .15);
+
+}
+#Main-features #card .cards:hover > :nth-child(2){
+	transition: 5s linear;
+	
+	display: inline;
+}
+#Main-features #card .cards:hover > :nth-child(1){
+	display: none;
+}
+#Main-features #card .cards > :nth-child(3) h2{
+	font-size: 1.7rem;
+	padding: 0px 0px 1.5em 0px;
+}
+#Main-features #card .cards > :nth-child(3) p{
+	font-size: 1.2rem;
+}
+#Main-features #card .cards #logoforSize{
+	height: 50px;
+	width: 47px;
+}
+#Numbering{
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#Numbering ul{
+	display: flex;
+	justify-content: center;
+}
+#Numbering li{
+	margin: 0px 0.6rem;
+}
+#Numbering li a{
+	font-size: 1.2rem;
+
+}
+#Numbering li a:hover{
+	transition: 0.5s linear;
+	font-weight: 700;
+}
+/*
+==================
+Logos
+==================
+*/
+#logos{
+	min-height: 700px;
+}
+#logos #Main-logos{
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+#logos #Main-logos .logos-contant{
+	width: 60%;
+	min-height: 520px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+}
+#logos #Main-logos .logos-contant > :nth-child(2){
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 3em;
+	z-index: 1;
+}
+
+#logos #Main-logos .logos-contant > :nth-child(2) .logos-color > :nth-child(2){
+	display: none;
+}
+#logos #Main-logos .logos-contant > :nth-child(2) .logos-color:hover > :nth-child(2){
+	display: block;
+}
+#logos #Main-logos .logos-contant > :nth-child(2) .logos-color:hover > :nth-child(1){
+	display: none;
+}
+
+
+
+
+#logos #Main-logos .logos-contant > :nth-child(2) img{
+	height: 35px;
+	width: 100px
+}
+#logos #Main-logos .logos-contant > :nth-child(4){
+	display: flex;
+	text-align: center;
+}
+#logos #Main-logos .logos-contant > :nth-child(4) h3{
+	padding: 0px 0.5em;
+}
+#logos #Main-logos .logos-contant > :nth-child(4) h3:nth-child(1){
+	border-right: 1px solid var(--bg-black);
+}
+#logos #Main-logos .img{
+	height: 70%;
+	width: 40%;
+	position: absolute;
+	bottom: 5px;
+	left: -80px;
+}
+
+
+/*
+==================
+Fourth-contant
+==================
+*/
+#Fourth-contant{
+	background: url("./images/pink_wall.jpg");
+	background-position: right center;
+	background-repeat: no-repeat; 
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#main-contant{
+	min-height: 200px;
+	padding-left: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+#main-contant .contant{
+	width: 58%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+#main-contant .contant a{
+	padding: 0.6em 1.5em;
+	border: 0.09rem solid var(--bg-black);
+}
+/*
+==================
+Footer
+==================
+*/
+footer{
+	min-height: 350px;
+	display: flex;
+	align-items: center;
+}
+#Main-Footer{
+	margin: auto;
+	min-height: 180px;
+	width: 850px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#Main-Footer .cards{
+	height: 130px;
+}
+#Main-Footer .cards ul{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#Main-Footer .cards a{
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+#Main-Footer > :nth-child(5){
+	width: 28%;
+}
+#Main-Footer > :nth-child(5) input{
+	border: 0.09rem solid var(--bg-black);
+	margin-top: 1.6rem;
+	padding: 0.6em;
+	width: 100%;
+}
+
+
+/*
+==================
+Footer Bottom
+==================
+*/
+#footer-bootom{
+	min-height: 200px;
+}
+#footer-bootom ul{
+	display: flex;
+	justify-content: center;
+}
+#footer-bootom > :nth-child(1){
+	margin: auto;
+}
+#footer-bootom > :nth-child(1) ul a{
+	font-size: 0.8rem;
+	margin: 0px 0.8rem;
+}
+
+#footer-bootom > :nth-child(2) ul li{
+	padding: 0px 0.8em;
+}
+#footer-bootom > :nth-child(2) ul li{
+	font-size: 0.8rem;
+}
+#footer-bootom > :nth-child(2){
+	margin: auto;
+	padding: 0.8em 0px;
+}
+#footer-bootom > :nth-child(2) ul li:nth-child(1){
+	border-right: 0.1rem solid var(--text-black);
+}
